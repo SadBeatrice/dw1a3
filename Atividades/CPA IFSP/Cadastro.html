@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
+</head>
+<body>
+    <h1>Cadastro dos Pacientes</h1>
+    <input type="text" id="texto00" placeholder="Nome">
+    <br>
+    <br>
+    <input type="text" id="texto01" placeholder="Sexo">
+    <br>
+    <br>
+    <input type="number" id="texto02" placeholder="Idade">
+    <br>
+    <br>
+    <input type="text" id="texto03" placeholder="Sexo">
+    <br>
+    <br>
+    <button onclick="criarDoc()">Cadastrar</button>
+
+    
+    <h1>Cadastro dos Médicos</h1>
+    <input type="email" id="emailInput" placeholder="E-mail" autocomplete="off">
+    <br>
+    <br>
+    <input type="password" id="passwordInput" placeholder="Senha" autocomplete="off">
+    <br>
+    <br>
+    <input type="text" id="texto10" placeholder="Nome">
+    <br>
+    <br>
+    <input type="number" id="texto11" placeholder="Idade">
+    <br>
+    <br>
+    <input type="text" id="texto12" placeholder="Sexo">
+    <br>
+    <br>
+    <input type="number" id="texto13" placeholder="CRM">
+    <br>
+    <br>
+    <button onclick="cadastrar()">Criar Conta</button>
+    
+
+    <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyCnO6ishyyTwur86_PYbn8CpRq2mXwS9_o",
+          authDomain: "rochebase-4207d.firebaseapp.com",
+          databaseURL: "https://rochebase-4207d-default-rtdb.firebaseio.com/",
+          projectId: "rochebase-4207d",
+          storageBucket: "rochebase-4207d.appspot.com",
+          messagingSenderId: "83362904349",
+          appId: "1:83362904349:web:32fee7da5f0153581b89f4",
+          measurementId: "G-RP35ZXFRYH"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        const storage = firebase.storage();
+        var storageRef = storage.ref();
+      </script>
+      <script src="js/app.js"></script>
+</body>
+</html>
