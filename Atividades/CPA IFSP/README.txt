@@ -4,7 +4,7 @@ Programa de uma Pseudo Clínica Psiquiátrica para alunos do IFSP (CPA IFSP)
 
 Na pasta css contém os programas em css:
 
-bootstrap.css é uma biblioteca pública que peguei na internet para me auxiliar.
+bootstrap.css é uma biblioteca pública que interage com a bootstrap.js.
 Style_login.css é a da página de login
 Styles.css é da página dos últimos agendamentos.
 Styles.css.map é um arquivo .map
