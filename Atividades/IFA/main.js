@@ -4,7 +4,7 @@ data = [
     },
     {doctor: 'Natan', 
         gem:{description: '4º sex. às 20:00h', day: 5, Semana: 4},
-        local:{description: '2º sáb. às 17:00h', day: 6, Semana: 2}
+        local:{description: '2º sáb. às 17:00h', day: 6, Semana: 2},
     },
     {doctor: 'Mário', 
         local:{description: '1º sáb. às 17:00h', day: 6, Semana: 1}
@@ -91,20 +91,20 @@ data = [
     },
     {doctor: 'Mateus', 
         gem:{description: 'última qua. às 19:30h', day: 3, Semana: -1},
-        local:{description: '1º sáb. às 16:30h', day: 6, Semana: 1}
+        local:{description: '1º sáb. às 16:30h', day: 6, Semana: 1},
     },
     {doctor: 'Jaqueline', 
-        local:{description: 'Não tem ensaio', day: 50, Semana: -2}
+        local:{description: 'Não tem ensaio', day: 50, Semana: -2},
     },
     {doctor: 'Sarah', 
         gem:{description: '1º sáb. às 15:00h', day: 6, Semana: 1},
-        local:{description: '3º qua. às 19:30h', day: 4, Semana: 3}
+        local:{description: '3º qua. às 19:30h', day: 4, Semana: 3},
     },
     {doctor: 'Daniel', 
-        local:{description: '4º sáb. às 17:00h', day: 6, Semana: 4}
+        local:{description: '4º sáb. às 17:00h', day: 6, Semana: 4},
     },
     {doctor: 'Márcio', 
-        local:{description: '1º sex. às 19:30h', day: 5, Semana: 1}
+        local:{description: '1º sex. às 19:30h', day: 5, Semana: 1},
     },
     {doctor: 'Danilo', 
         local:{description: '3º sáb. às 19:30h', day: 6, Semana: 3}
@@ -151,7 +151,7 @@ data = [
     },
     {doctor: 'Cláudia', 
         gem:{description: '3ª seg. às 19:30h', day: 1, Semana: 3},
-        local:{description: 'último dom. às 16:00h', day: 6, Semana: -1}
+        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1}
     },
     {doctor: 'Antônio', 
         local:{description: 'último dom. às 16:00h', day: 0, Semana: -1}
@@ -197,89 +197,93 @@ function verificarSeJaPassou(data) {
     }
 }
 
-function ordenaçãoDiaMes(day, ordenação) {
+function ordenaçãoDiaMes(day, ordenação){
     let dataAtual = new Date();
     let mesAtual = dataAtual.getMonth();
-  
-    // Inicializa o contador de semanas como 0
     let contadorDeSemanas = 0;
-  
-    // Define o dia como 1 para percorrer todos os dias do mês atual
     dataAtual.setDate(1);
-  
-    // Percorre os dias do mês atual
     while (dataAtual.getMonth() === mesAtual) {
-      // Verifica se o dia atual é uma sexta-feira
-      if (dataAtual.getDay() === day) {
-        contadorDeSemanas++;
-  
-        // Se for o dia certo na semana certa, retorna a data
-        if (contadorDeSemanas === ordenação) {
-          resposta = new Date(dataAtual);
-          return (resposta); 
+        if (dataAtual.getDay() === day) {
+            contadorDeSemanas++;
+            if (contadorDeSemanas === ordenação) {
+                resposta = new Date(dataAtual);
+            }
         }
-      }
-      // Avança para o próximo dia
-      dataAtual.setDate(dataAtual.getDate() + 1);
+        dataAtual.setDate(dataAtual.getDate() + 1);
     }
-    return null; // Retorna null caso não encontre o dia
-}
-
-function buscarResposta(day, ordenação){
-    
-    if(ordenação === 0) {
-        var resposta = calcularProximoDiaSemana(day)
-        return resposta;
-    }
-    else {
-    possivelResposta = ordenaçãoDiaMes(day, ordenação);
-    if (verificarSeJaPassou(possivelResposta)) {
+    if (verificarSeJaPassou(resposta)) {
         let dataAtual = new Date();
         let mesAtual = dataAtual.getMonth();
         let anoAtual = dataAtual.getFullYear();
-  
-        // Inicializa o contador de semanas como 0
         let contadorDeSemanas = 0;
-  
-        // Define o dia como 1 para percorrer todos os dias do mês atual
         dataAtual.setDate(1);
-        // Define a data atual como o primeiro dia do próximo mês
         mesAtual++
         dataAtual.setFullYear(anoAtual, mesAtual, 1);
     
         while (dataAtual.getMonth() === mesAtual) {
-
             if (dataAtual.getDay() === day) {
                 contadorDeSemanas++;
-          
-                // Se for o dia certo na semana certa, retorna a data
                 if (contadorDeSemanas === ordenação) {
                   resposta = new Date(dataAtual);
                   return (converterDataParaString(resposta)); 
                 }
               }
-              // Avança para o próximo dia
               dataAtual.setDate(dataAtual.getDate() + 1);
             }
-        return null; // Retorna null caso não encontre o dia
+        return null;
         }
     else {
         return (converterDataParaString(possivelResposta));
     }
 }
-}
 
-function calcularProximoDiaSemana(numeroDia) {
+function calcularProximoDiaSemana(day) {
     var dataAtual = new Date();
     var diaSemanaAtual = dataAtual.getDay();
   
-    var diasParaAdicionar = (numeroDia - diaSemanaAtual + 7) % 7; // Calcula a diferença em dias até o próximo dia da semana
+    var diasParaAdicionar = (day - diaSemanaAtual + 7) % 7; // Calcula a diferença em dias até o próximo dia da semana
   
     var proximaData = new Date(dataAtual.getFullYear(), dataAtual.getMonth(), dataAtual.getDate() + diasParaAdicionar);
   
     return converterDataParaString(proximaData);
-  }
+}
 
+function calcularÚltimoDiaSemana(day) {
+    var dataAtual = new Date();
+    var ultimoDiaMes = new Date(dataAtual.getFullYear(), dataAtual.getMonth() + 1, 0);
+  
+    // Ajusta o objeto Date para o último dia da semana correspondente
+    ultimoDiaMes.setDate(ultimoDiaMes.getDate() - (ultimoDiaMes.getDay() + (7 - day)) % 7);
+    
+    if (verificarSeJaPassou(ultimoDiaMes)) {
+        var dataAtual = new Date();
+        var ultimoDiaMes = new Date(dataAtual.getFullYear(), dataAtual.getMonth() + 2, 0);
+        ultimoDiaMes.setDate(ultimoDiaMes.getDate() - (ultimoDiaMes.getDay() + (7 - day)) % 7);
+        return converterDataParaString(ultimoDiaMes);
+    }
+    else{
+        return converterDataParaString(ultimoDiaMes);
+    }
+}
+
+function buscarResposta(day, ordenação){
+    
+    if (ordenação === -1){
+        var resposta = calcularÚltimoDiaSemana(day)
+        return resposta;
+    }
+    else if(ordenação === 0) {
+        var resposta = calcularProximoDiaSemana(day)
+        return resposta;
+    }
+    else if(ordenação === -2) {
+        return null;
+    }
+    else {
+        var resposta = ordenaçãoDiaMes(day, ordenação)
+        return resposta;
+    }
+}
 
 data.forEach(element => {
     if (element.hasOwnProperty('gem')) {
@@ -321,7 +325,6 @@ data.forEach(element => {
         $("#tb_local").append(doctor)
     }
 });
-
 
 $(document).ready(function() {
     $('#data_gem').DataTable( {
