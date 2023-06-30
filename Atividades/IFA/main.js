@@ -10,7 +10,7 @@ data = [
         local:{description: '1º sáb. às 17:00h', day: 6, Semana: 1}
     },
     {doctor: 'Maria', 
-        gem:{description: 'último sáb. às 14:30h', day: 6, Semana: 0},
+        gem:{description: 'último sáb. às 14:30h', day: 6, Semana: -1},
         local:{description: '1º dom. às 16:00h', day: 0, Semana: 1}
     },
 	{doctor: 'José', 
@@ -22,7 +22,7 @@ data = [
         local:{description: '1º sáb. às 17:00h', day: 6, Semana: 1}
     },
     {doctor: 'Michele', 
-        local:{description: 'último dom. às 16:00h', day: 0, Semana: 0}
+        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1}
     },
     {doctor: 'Renata', 
         local:{description: '4º dom. às 16:00h', day: 0, Semana: 4}
@@ -41,8 +41,8 @@ data = [
         local:{description: '4º sáb. às 16:00h', day: 6, Semana: 4}
     },
     {doctor: 'Camila', 
-        gem:{description: 'última qui. às 19:30h', day: 4, Semana: 0},
-        local:{description: 'último sáb. às 19:30h', day: 6, Semana: 0}
+        gem:{description: 'última qui. às 19:30h', day: 4, Semana: -1},
+        local:{description: 'último sáb. às 19:30h', day: 6, Semana: -1}
     },
     {doctor: 'Marta', 
         gem:{description: '2º sáb. às 17:00h', day: 6, Semana: 2},
@@ -65,7 +65,7 @@ data = [
     },
     {doctor: 'Paulo', 
         gem:{description: '3º sáb. às 14:30h', day: 6, Semana: 3},
-        local:{description: 'último dom. às 16:00h', day: 0, Semana: 0}
+        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1}
     },
     {doctor: 'Taís', 
         gem:{description: '3ª sex. às 20:00h', day: 5, Semana: 3},
@@ -77,24 +77,24 @@ data = [
     },
     {doctor: 'Tamiris', 
         gem:{description: '1º sáb. às 10:30h', day: 6, Semana: 1},
-        local:{description: 'último dom. às 16:00h', day: 0, Semana: 0}
+        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1}
     },
     {doctor: 'João', 
-        local:{description: 'último dom. às 16:00h', day: 0, Semana: 0}
+        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1}
     },
     {doctor: 'Lucas', 
         local:{description: '3º sáb. às 19:30h', day: 6, Semana: 3}
     },
     {doctor: 'Marcos', 
-        gem:{description: 'última qui. às 20:00h', day: 4, Semana: 0},
+        gem:{description: 'última qui. às 20:00h', day: 4, Semana: -1},
         local:{description: '4º sex. às 20:00h', day: 5, Semana: 4}
     },
     {doctor: 'Mateus', 
-        gem:{description: 'última qua. às 19:30h', day: 3, Semana: 0},
+        gem:{description: 'última qua. às 19:30h', day: 3, Semana: -1},
         local:{description: '1º sáb. às 16:30h', day: 6, Semana: 1}
     },
     {doctor: 'Jaqueline', 
-        local:{description: 'Não tem ensaio', day: 50, Semana: 0}
+        local:{description: 'Não tem ensaio', day: 50, Semana: -2}
     },
     {doctor: 'Sarah', 
         gem:{description: '1º sáb. às 15:00h', day: 6, Semana: 1},
@@ -120,7 +120,7 @@ data = [
         local:{description: '1º sex. às 19:30h', day: 5, Semana: 1}
     },
     {doctor: 'Amanda', 
-        gem:{description: 'última qua. às 20:00h', day: 3, Semana: 0},
+        gem:{description: 'última qua. às 20:00h', day: 3, Semana: -1},
         local:{description: '4º dom. às 16:00h', day: 0, Semana: 4}
     },
     {doctor: 'Miguel', 
@@ -132,14 +132,14 @@ data = [
     },
     {doctor: 'Anderson', 
         gem:{description: 'todo o sáb. às 16:00h', day: 6, Semana: 0},
-        local:{description: 'último sáb. às 17:00h', day: 6, Semana: 0}
+        local:{description: 'último sáb. às 17:00h', day: 6, Semana: -1}
     },
     {doctor: 'Jônatas', 
-        gem:{description: 'última ter. às 19:30h', day: 2, Semana: 0},
+        gem:{description: 'última ter. às 19:30h', day: 2, Semana: -1},
         local:{description: '2º sáb. às 19:30h', day: 6, Semana: 2}
     },
     {doctor: 'Carolina', 
-        gem:{description: 'último dom. às 09:00h', day: 0, Semana: 0},
+        gem:{description: 'último dom. às 09:00h', day: 0, Semana: -1},
         local:{description: '1º dom. às 16h30h', day: 0, Semana: 1}
     },
     {doctor: 'Ricardo', 
@@ -151,16 +151,16 @@ data = [
     },
     {doctor: 'Cláudia', 
         gem:{description: '3ª seg. às 19:30h', day: 1, Semana: 3},
-        local:{description: 'último dom. às 16:00h', day: 6, Semana: 0}
+        local:{description: 'último dom. às 16:00h', day: 6, Semana: -1}
     },
     {doctor: 'Antônio', 
-        local:{description: 'último dom. às 16:00h', day: 0, Semana: 0}
+        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1}
     },
     {doctor: 'Sérgio', 
-        local:{description: 'último sáb. às 17:00h', day: 6, Semana: 0}
+        local:{description: 'último sáb. às 17:00h', day: 6, Semana: -1}
     },
     {doctor: 'Samuel', 
-        gem:{description: 'última seg. às 19:30h', day: 1, Semana: 0},
+        gem:{description: 'última seg. às 19:30h', day: 1, Semana: -1},
         local:{description: '2º sex. às 19:30h', day: 5, Semana: 2}
     },
     {doctor: 'Mônica', 
@@ -227,6 +227,11 @@ function ordenaçãoDiaMes(day, ordenação) {
 
 function buscarResposta(day, ordenação){
     
+    if(ordenação === 0) {
+        var resposta = calcularProximoDiaSemana(day)
+        return resposta;
+    }
+    else {
     possivelResposta = ordenaçãoDiaMes(day, ordenação);
     if (verificarSeJaPassou(possivelResposta)) {
         let dataAtual = new Date();
@@ -262,6 +267,18 @@ function buscarResposta(day, ordenação){
         return (converterDataParaString(possivelResposta));
     }
 }
+}
+
+function calcularProximoDiaSemana(numeroDia) {
+    var dataAtual = new Date();
+    var diaSemanaAtual = dataAtual.getDay();
+  
+    var diasParaAdicionar = (numeroDia - diaSemanaAtual + 7) % 7; // Calcula a diferença em dias até o próximo dia da semana
+  
+    var proximaData = new Date(dataAtual.getFullYear(), dataAtual.getMonth(), dataAtual.getDate() + diasParaAdicionar);
+  
+    return converterDataParaString(proximaData);
+  }
 
 
 data.forEach(element => {
