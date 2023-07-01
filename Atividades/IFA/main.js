@@ -7,11 +7,11 @@ data = [
         local:{description: '2º sáb. às 17:00h', day: 6, Semana: 2},
     },
     {doctor: 'Mário', 
-        local:{description: '1º sáb. às 17:00h', day: 6, Semana: 1}
+        local:{description: '1º sáb. às 17:00h', day: 6, Semana: 1},
     },
     {doctor: 'Maria', 
         gem:{description: 'último sáb. às 14:30h', day: 6, Semana: -1},
-        local:{description: '1º dom. às 16:00h', day: 0, Semana: 1}
+        local:{description: '1º dom. às 16:00h', day: 0, Semana: 1},
     },
 	{doctor: 'José', 
         gem:{description: '2ª sex. às 19:30h', day: 5, Semana: 2},
@@ -19,75 +19,75 @@ data = [
     },
 	{doctor: 'Caio',  
         gem:{description: 'todo o dom. às 09:10h', day: 0, Semana: 0},
-        local:{description: '1º sáb. às 17:00h', day: 6, Semana: 1}
+        local:{description: '1º sáb. às 17:00h', day: 6, Semana: 1},
     },
     {doctor: 'Michele', 
-        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1}
+        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1},
     },
     {doctor: 'Renata', 
-        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4}
+        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4},
     },
     {doctor: 'Natasha', 
-        local:{description: '2º sáb. às 16h30h', day: 6, Semana: 2}
+        local:{description: '2º sáb. às 16h30h', day: 6, Semana: 2},
     },
     {doctor: 'Natália', 
         gem:{description: '1º sáb. às 15:30h', day: 6, Semana: 1},
-        local:{description: '1º dom. às 16:00h', day: 0, Semana: 1}
+        local:{description: '1º dom. às 16:00h', day: 0, Semana: 1},
     },
     {doctor: 'Luana', 
-        local:{description: '3º sáb. às 17:00h', day: 6, Semana: 3}
+        local:{description: '3º sáb. às 17:00h', day: 6, Semana: 3},
     },
     {doctor: 'Patrícia', 
-        local:{description: '4º sáb. às 16:00h', day: 6, Semana: 4}
+        local:{description: '4º sáb. às 16:00h', day: 6, Semana: 4},
     },
     {doctor: 'Camila', 
         gem:{description: 'última qui. às 19:30h', day: 4, Semana: -1},
-        local:{description: 'último sáb. às 19:30h', day: 6, Semana: -1}
+        local:{description: 'último sáb. às 19:30h', day: 6, Semana: -1},
     },
     {doctor: 'Marta', 
         gem:{description: '2º sáb. às 17:00h', day: 6, Semana: 2},
-        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4}
+        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4},
     },
     {doctor: 'Márcia', 
         gem:{description: '2º sáb. às 15:00h', day: 6, Semana: 2},
-        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4}
+        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4},
     },
     {doctor: 'Johnata', 
-        local:{description: '2º sáb. às 19:30h', day: 6, Semana: 2}
+        local:{description: '2º sáb. às 19:30h', day: 6, Semana: 2},
     },
     {doctor: 'Maiara', 
         gem:{description: '3º sáb. às 16:00h', day: 6, Semana: 3},
-        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4}
+        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4},
     },
     {doctor: 'Renato', 
         gem:{description: '3ª ter. às 20:00h', day: 2, Semana: 3},
-        local:{description: '3º sáb. às 19:30h', day: 6, Semana: 3}
+        local:{description: '3º sáb. às 19:30h', day: 6, Semana: 3},
     },
     {doctor: 'Paulo', 
         gem:{description: '3º sáb. às 14:30h', day: 6, Semana: 3},
-        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1}
+        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1},
     },
     {doctor: 'Taís', 
         gem:{description: '3ª sex. às 20:00h', day: 5, Semana: 3},
-        local:{description: '1º dom. às 16:00h', day: 0, Semana: 1}
+        local:{description: '1º dom. às 16:00h', day: 0, Semana: 1},
     },
     {doctor: 'Carlos', 
         gem:{description: '3ª sex. às 19:30h', day: 5, Semana: 3},
-        local:{description: '1º sáb. às 17:00h', day: 6, Semana: 1}
+        local:{description: '1º sáb. às 17:00h', day: 6, Semana: 1},
     },
     {doctor: 'Tamiris', 
         gem:{description: '1º sáb. às 10:30h', day: 6, Semana: 1},
-        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1}
+        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1},
     },
     {doctor: 'João', 
-        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1}
+        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1},
     },
     {doctor: 'Lucas', 
-        local:{description: '3º sáb. às 19:30h', day: 6, Semana: 3}
+        local:{description: '3º sáb. às 19:30h', day: 6, Semana: 3},
     },
     {doctor: 'Marcos', 
         gem:{description: 'última qui. às 20:00h', day: 4, Semana: -1},
-        local:{description: '4º sex. às 20:00h', day: 5, Semana: 4}
+        local:{description: '4º sex. às 20:00h', day: 5, Semana: 4},
     },
     {doctor: 'Mateus', 
         gem:{description: 'última qua. às 19:30h', day: 3, Semana: -1},
@@ -107,65 +107,65 @@ data = [
         local:{description: '1º sex. às 19:30h', day: 5, Semana: 1},
     },
     {doctor: 'Danilo', 
-        local:{description: '3º sáb. às 19:30h', day: 6, Semana: 3}
+        local:{description: '3º sáb. às 19:30h', day: 6, Semana: 3},
     },
     {doctor: 'Melissa', 
         gem:{description: '3ª sex. às 19:30h', day: 5, Semana: 3},
-        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4}
+        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4},
     },
     {doctor: 'Davi', 
-        local:{description: '1º dom. às 16:00h', day: 0, Semana: 1}
+        local:{description: '1º dom. às 16:00h', day: 0, Semana: 1},
     },
     {doctor: 'Andréia', 
-        local:{description: '1º sex. às 19:30h', day: 5, Semana: 1}
+        local:{description: '1º sex. às 19:30h', day: 5, Semana: 1},
     },
     {doctor: 'Amanda', 
         gem:{description: 'última qua. às 20:00h', day: 3, Semana: -1},
-        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4}
+        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4},
     },
     {doctor: 'Miguel', 
         gem:{description: '1ª seg. às 19:30h', day: 1, Semana: 1},
-        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4}
+        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4},
     },
     {doctor: 'Ana', 
-        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4}
+        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4},
     },
     {doctor: 'Anderson', 
         gem:{description: 'todo o sáb. às 16:00h', day: 6, Semana: 0},
-        local:{description: 'último sáb. às 17:00h', day: 6, Semana: -1}
+        local:{description: 'último sáb. às 17:00h', day: 6, Semana: -1},
     },
     {doctor: 'Jônatas', 
         gem:{description: 'última ter. às 19:30h', day: 2, Semana: -1},
-        local:{description: '2º sáb. às 19:30h', day: 6, Semana: 2}
+        local:{description: '2º sáb. às 19:30h', day: 6, Semana: 2},
     },
     {doctor: 'Carolina', 
         gem:{description: 'último dom. às 09:00h', day: 0, Semana: -1},
-        local:{description: '1º dom. às 16h30h', day: 0, Semana: 1}
+        local:{description: '1º dom. às 16h30h', day: 0, Semana: 1},
     },
     {doctor: 'Ricardo', 
         gem:{description: 'toda a seg. às 20:00h', day: 1, Semana: 0},
-        local:{description: '2º sáb. às 17:00h', day: 6, Semana: 2}
+        local:{description: '2º sáb. às 17:00h', day: 6, Semana: 2},
     },
     {doctor: 'Lúcia', 
-        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4}
+        local:{description: '4º dom. às 16:00h', day: 0, Semana: 4},
     },
     {doctor: 'Cláudia', 
         gem:{description: '3ª seg. às 19:30h', day: 1, Semana: 3},
-        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1}
+        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1},
     },
     {doctor: 'Antônio', 
-        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1}
+        local:{description: 'último dom. às 16:00h', day: 0, Semana: -1},
     },
     {doctor: 'Sérgio', 
-        local:{description: 'último sáb. às 17:00h', day: 6, Semana: -1}
+        local:{description: 'último sáb. às 17:00h', day: 6, Semana: -1},
     },
     {doctor: 'Samuel', 
         gem:{description: 'última seg. às 19:30h', day: 1, Semana: -1},
-        local:{description: '2º sex. às 19:30h', day: 5, Semana: 2}
+        local:{description: '2º sex. às 19:30h', day: 5, Semana: 2},
     },
     {doctor: 'Mônica', 
         gem:{description: 'toda a seg. às 20:30h', day: 1, Semana: 0},
-        local:{description: '1º sáb. às 19:30h', day: 6, Semana: 1}
+        local:{description: '1º sáb. às 19:30h', day: 6, Semana: 1},
     },
 ]
 
@@ -201,6 +201,7 @@ function ordenaçãoDiaMes(day, ordenação){
     let dataAtual = new Date();
     let mesAtual = dataAtual.getMonth();
     let contadorDeSemanas = 0;
+    let resposta = 0;
     dataAtual.setDate(1);
     while (dataAtual.getMonth() === mesAtual) {
         if (dataAtual.getDay() === day) {
@@ -233,7 +234,7 @@ function ordenaçãoDiaMes(day, ordenação){
         return null;
         }
     else {
-        return (converterDataParaString(possivelResposta));
+        return (converterDataParaString(resposta));
     }
 }
 
@@ -273,7 +274,7 @@ function buscarResposta(day, ordenação){
         return resposta;
     }
     else if(ordenação === 0) {
-        var resposta = calcularProximoDiaSemana(day)
+        var resposta = calcularProximoDiaSemana(day) //OK
         return resposta;
     }
     else if(ordenação === -2) {
@@ -305,7 +306,6 @@ data.forEach(element => {
         $("#tb_gem").append(doctor)
     }
     
-
     if(element.hasOwnProperty('local')){
 
         var respostaFinal = buscarResposta(element.local.day, element.local.Semana);
